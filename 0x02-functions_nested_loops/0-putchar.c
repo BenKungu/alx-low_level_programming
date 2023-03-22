@@ -1,6 +1,6 @@
 #include "main.h"
 
-/* *
+/**
  *main - print _putchar
  *
  *Desciption : print _putchar followed by a new line
