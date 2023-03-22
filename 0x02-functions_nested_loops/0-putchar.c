@@ -7,9 +7,9 @@
  *
  *Return: 0  (Success)
  */
-int main()
+int main(void)
 {
-       	char s[] ="_putchar";
+       	char s[] = "_putchar";
        	int i = 0;
 
        	while(s[i])
