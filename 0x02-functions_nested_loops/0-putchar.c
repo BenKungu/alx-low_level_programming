@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /* *
  *main - print _putchar
@@ -9,10 +9,9 @@
 */
 
 int main() {
-   char s[] ='_putchar';
-
+   char s[] ="_putchar";
     i = 0;
-    for(s[i])
+    while(s[i])
 	{
 		_putchar(s[i]);
 		i++;
