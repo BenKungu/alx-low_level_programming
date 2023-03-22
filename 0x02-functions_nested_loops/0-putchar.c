@@ -1,15 +1,24 @@
-#include <stdio.h>
+#include <main.h>
 
 /* *
- *include standard input/output library
+ *main - print _putchar
  *
- *print the string "_putchar" followed by a new line
+ *Desciption : print _putchar followed by a new line
  *
- *return: Always 0  (success)
+ *Return: 0  (Success)
 */
 
 int main() {
-    printf("_putchar\n");
-    return 0;
+   char s[] ='_putchar';
+    _putchar('_');
+    _putchar('p');
+    _putchar('u');
+    _putchar('t');
+    _putchar('c');
+    _putchar('h');
+    _putchar('a');
+    _putchar('r');
+    _putchar('\n');
+     return 0;
 }
 
