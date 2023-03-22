@@ -10,15 +10,6 @@
 
 int main() {
    char s[] ='_putchar';
-    _putchar('_');
-    _putchar('p');
-    _putchar('u');
-    _putchar('t');
-    _putchar('c');
-    _putchar('h');
-    _putchar('a');
-    _putchar('r');
-    _putchar('\n');
 
     i = 0;
     for(s[i])
@@ -27,6 +18,7 @@ int main() {
 		i++;
 	}
 
+    _putchar('\n');
 
     return 0;
 }
