@@ -7,18 +7,15 @@
  *
  *Return: 0  (Success)
 */
-
-int main() {
+int main()
+{
    char s[] ="_putchar";
    int i = 0;
-    while(s[i])
-	{
-		_putchar(s[i]);
-		i++;
-	}
-
-    _putchar('\n');
-
-    return 0;
+   while(s[i])
+   {
+	_putchar(s[i]);
+	i++;
+   }
+   _putchar('\n');
+   return 0;
 }
-
