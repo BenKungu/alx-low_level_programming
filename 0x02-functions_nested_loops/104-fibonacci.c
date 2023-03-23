@@ -7,23 +7,27 @@
  */
 
 int main(void)
-{	
-	int a = 1, b = 2, c, i = 3;
-	printf("%d, %d, ", a, b);
+{
+	long int sum;
+	long int first, second;
+	int count;
 
-	while (i <= 98)
-       	{
-       		 c = a + b;
-       		 printf("%d", c);
-       		 if (i != 98)
-		 {
-                 	 printf(", ");
-       		 }
-       		 a = b;
-      		 b = c;
-       		 i++;
+	sum = 0;
+	first = 0;
+	second = 1;
+	count = 0;
+
+	while (count < 97)
+	{
+		sum = first + second;
+		printf("%li, ", sum);
+		first = second;
+		second = sum;
+
+		count++;
 	}
+	sum = first + second;
+	printf("%li\n", sum);
 
-        printf("\n");
-        return 0;
+	return (0);
 }
