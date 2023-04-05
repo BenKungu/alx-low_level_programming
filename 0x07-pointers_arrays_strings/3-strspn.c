@@ -7,35 +7,33 @@
  *source
  */
 
-int _putchar(char c);
-
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	bool found;
+	unsigned int prev = 0;
+	int i, j;
 
-	for (unsigned int i = 0; s[i] != '\0'; ++i)
-       	{
-        	found = false;
-		
-        	for (unsigned int j = 0; accept[j] != '\0'; ++j)
-	       	{
-			if (s[i] == accept[j])
-		       	{
-				found = true
-				break;
-			}
-		}
-		
-		if (found)
+	i = 0;
+	j = 0;
+
+	while (*(s + i) != '\0')
+	{
+		j = 0;
+		prev = count;
+		while (*(accept + j) != '\0')
 		{
-			count++;
+			if (*(s + i) == *(accept + j))
+			{
+				count++;
+			}
+			j++;
 		}
-
-	       	else
+		if (prev == count)
 		{
 			break;
 		}
+		i++;
 	}
-	return count;
+
+	return (count);
 }
