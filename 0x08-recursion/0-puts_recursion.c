@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- *base case: if the current character is the null terminator
- *
- *recursively call the function with the next character
+ *_puts_recursion: if the current character is the null terminator
+ *@s:recursively call the function with the next character
  */
 
 void _puts_recursion(char *s)
